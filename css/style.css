@@ -43,6 +43,9 @@ a:hover { color: var(--red); }
 /* ---------- Header ---------- */
 
 .site-header {
+  position: sticky;   /* header and menu stay pinned to the top while scrolling */
+  top: 0;
+  z-index: 100;
   background: var(--ground);
   border-bottom: 3px solid var(--red);
 }
@@ -138,7 +141,8 @@ a:hover { color: var(--red); }
   .nav-list::-webkit-scrollbar { display: none; }
   .brand-logo { height: 48px; }
   .brand-name { font-size: 21px; }
-  .header-meta { font-size: 13px; }
+  .header-meta { display: none; }   /* phone: keep the pinned header short; the date is shown in the hero */
+  .header-top { padding-top: 10px; padding-bottom: 10px; }
 }
 
 /* ---------- Hero (home) and page band ---------- */
@@ -395,6 +399,11 @@ a:hover { color: var(--red); }
 }
 
 .footer-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 28px 48px;
   padding-top: 28px;
   padding-bottom: 36px;
   font-size: 15px;
@@ -411,3 +420,14 @@ a:hover { color: var(--red); }
 
 .contact-row a { color: #FFFFFF; }
 .contact-row a:hover { color: var(--footer-muted); }
+
+.footer-host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.footer-host .section-label { color: #FFFFFF; }
+
+.footer-host img { width: 360px; max-width: 100%; }
