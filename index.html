@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;900&display=swap">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=20261124c">
 </head>
 <body>
 
@@ -32,15 +32,17 @@
     <ul class="container nav-list">
       <li><a class="nav-link" href="index.html" aria-current="page">ABOUT</a></li>
       <li><a class="nav-link" href="authors-information.html">AUTHORS INFORMATION</a></li>
-      <li><a class="nav-link" href="./#">CONFERENCE COMMITTEE</a></li>
-      <li><a class="nav-link" href="./#">SPEAKERS INFO</a></li>
-      <li><a class="nav-link" href="./#">AGENDA OVERVIEW</a></li>
-      <li><a class="nav-link" href="./#">SPONSORS INFORMATION</a></li>
-      <li><a class="nav-link" href="./#">CONFERENCE VENUE</a></li>
-      <li><a class="nav-link" href="./#">FAQ</a></li>
+      <li><a class="nav-link" href="conference-committee.html">CONFERENCE COMMITTEE</a></li>
+      <li><a class="nav-link" href="speakers-info.html">SPEAKERS INFO</a></li>
+      <li><a class="nav-link" href="agenda-overview.html">AGENDA OVERVIEW</a></li>
+      <li><a class="nav-link" href="sponsors-information.html">SPONSORS INFORMATION</a></li>
+      <li><a class="nav-link" href="conference-venue.html">CONFERENCE VENUE</a></li>
+      <li><a class="nav-link" href="faq.html">FAQ</a></li>
     </ul>
   </nav>
 </header>
+
+<div class="news-strip" data-news-strip></div>
 
 <main>
   <section class="hero">
@@ -71,6 +73,79 @@
       <div class="section-rule"></div>
       <p>Marking its 30th edition, the International Conference on Mechatronics Technology (ICMT 2027) will take place in Taipei, Taiwan, hosted by National Taipei University of Technology. ICMT has long served as an international meeting point where researchers, engineers, and industry practitioners share recent advances in mechatronics. Building on this tradition, ICMT 2027 will connect academia and industry around emerging technologies and their real-world applications. The program will feature keynote speeches, oral sessions, and poster presentations across a broad spectrum of mechatronics topics.</p>
     </div>
+    <aside class="news-card" id="news" aria-labelledby="news-title">
+      <h2 class="section-title" id="news-title">NEWS</h2>
+      <ol class="news-list" data-news-list></ol>
+    </aside>
+  </section>
+
+  <section class="container cfp-info home-dates" id="dates">
+    <div class="cfp-row">
+      <div class="dates-block">
+        <h2 class="section-title">IMPORTANT DATES</h2>
+        <div class="section-rule"></div>
+        <div class="timeline-scroll">
+          <ol class="timeline">
+            <li class="tl-item is-up" style="--x: 0.0">
+              <span class="tl-dot" aria-hidden="true"></span>
+              <div class="tl-label">
+                <span class="tl-date">March 1, 2027</span>
+                <span class="tl-what">Special Session Proposal</span>
+              </div>
+            </li>
+            <li class="tl-item is-down" style="--x: 0.352">
+              <span class="tl-dot" aria-hidden="true"></span>
+              <div class="tl-label">
+                <span class="tl-date">July 31, 2027</span>
+                <span class="tl-what">Full Paper Submission</span>
+              </div>
+            </li>
+            <li class="tl-item is-up" style="--x: 0.505">
+              <span class="tl-dot" aria-hidden="true"></span>
+              <div class="tl-label">
+                <span class="tl-date">August 16, 2027</span>
+                <span class="tl-what">Paper Acceptance Notification</span>
+              </div>
+            </li>
+            <li class="tl-item is-down" style="--x: 0.682">
+              <span class="tl-dot" aria-hidden="true"></span>
+              <div class="tl-label tl-to-left">
+                <span class="tl-date">September 17, 2027</span>
+                <span class="tl-what">Abstract Submission<br>(Presentation Track only)</span>
+              </div>
+            </li>
+            <li class="tl-item is-both" style="--x: 0.816">
+              <span class="tl-dot" aria-hidden="true"></span>
+              <div class="tl-label tl-up tl-to-left">
+                <span class="tl-date">September 20, 2027</span>
+                <span class="tl-what">Early-Bird Registration</span>
+              </div>
+              <div class="tl-label tl-down tl-to-right">
+                <span class="tl-date">September 20, 2027</span>
+                <span class="tl-what">Camera-Ready Paper</span>
+              </div>
+            </li>
+            <li class="tl-item is-up is-event" style="--x: 1.0">
+              <span class="tl-dot" aria-hidden="true"></span>
+              <div class="tl-label">
+                <span class="tl-date">October 27–30, 2027</span>
+                <span class="tl-what">Conference Days</span>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <aside class="special-card">
+        <div class="special-head">
+          <h2 class="special-title">CALL FOR SPECIAL SESSIONS</h2>
+          <div class="special-rule"></div>
+        </div>
+        <div class="special-body">
+        <p>We welcome Special Session proposals on emerging topics. Download the proposal template and email the completed form to <a href="mailto:icmt2027@gmail.com">icmt2027@gmail.com</a> by <strong>March 1, 2027</strong>.</p>
+          <a class="btn btn-gold" href="https://docs.google.com/document/d/1nG-NBA1SE25Xr7G0ADcLMeVARUiHRvG0qKk45241iaQ/export?format=docx" rel="noopener"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>PROPOSAL TEMPLATE (.DOCX)</a>
+        </div>
+      </aside>
+    </div>
   </section>
 </main>
 
@@ -83,7 +158,7 @@
       <div class="section-label">CONTACT</div>
       <div class="contact-row">
         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-        <span>ICMT 2027 Secretariat</span>
+        <span>Ms. Shio-Jhu Jian, Conference Secretary</span>
       </div>
       <div class="contact-row">
         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
@@ -94,8 +169,13 @@
       <div class="section-label">HOSTED BY</div>
       <img src="images/logo-taipeitech-white.png" width="900" height="145" alt="National Taipei University of Technology (Taipei Tech)">
     </div>
+    <div class="footer-host">
+      <div class="section-label">CO-HOSTED BY</div>
+      <img src="images/logo-ncir-white.png" width="900" height="170" alt="National Center for Instrumentation Research (NCIR), National Institutes of Applied Research">
+    </div>
   </div>
 </footer>
 
+<script src="js/news.js?v=20261124c" defer></script>
 </body>
 </html>

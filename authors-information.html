@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;900&display=swap">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=20261124c">
 </head>
 <body>
 
@@ -28,39 +28,153 @@
     <ul class="container nav-list">
       <li><a class="nav-link" href="index.html">ABOUT</a></li>
       <li><a class="nav-link" href="authors-information.html" aria-current="page">AUTHORS INFORMATION</a></li>
-      <li><a class="nav-link" href="./#">CONFERENCE COMMITTEE</a></li>
-      <li><a class="nav-link" href="./#">SPEAKERS INFO</a></li>
-      <li><a class="nav-link" href="./#">AGENDA OVERVIEW</a></li>
-      <li><a class="nav-link" href="./#">SPONSORS INFORMATION</a></li>
-      <li><a class="nav-link" href="./#">CONFERENCE VENUE</a></li>
-      <li><a class="nav-link" href="./#">FAQ</a></li>
+      <li><a class="nav-link" href="conference-committee.html">CONFERENCE COMMITTEE</a></li>
+      <li><a class="nav-link" href="speakers-info.html">SPEAKERS INFO</a></li>
+      <li><a class="nav-link" href="agenda-overview.html">AGENDA OVERVIEW</a></li>
+      <li><a class="nav-link" href="sponsors-information.html">SPONSORS INFORMATION</a></li>
+      <li><a class="nav-link" href="conference-venue.html">CONFERENCE VENUE</a></li>
+      <li><a class="nav-link" href="faq.html">FAQ</a></li>
     </ul>
   </nav>
 </header>
 
+<div class="news-strip" data-news-strip></div>
+
 <main>
   <section class="page-band">
     <div class="container band-inner">
-      <div class="eyebrow">CALL FOR PAPERS</div>
       <h1 class="band-title">AUTHORS INFORMATION</h1>
     </div>
   </section>
 
-  <section class="cfp">
-    <div class="cfp-actions">
-      <a class="btn btn-primary" href="https://drive.google.com/file/d/1scCP16VMRXtT7e2zVp4dBb_7OobYinqm/view?usp=drive_link" target="_blank" rel="noopener">
-        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
-        DOWNLOAD CFP (PDF)
-      </a>
-      <a class="btn btn-outline" href="images/cfp-flyer-v2-full.jpg" target="_blank" rel="noopener">
-        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>
-        VIEW FULL SIZE
-      </a>
+  <section class="container cfp-layout">
+    <div class="topics-block">
+      <h2 class="section-title">CONFERENCE TOPICS</h2>
+      <div class="section-rule"></div>
+      <p class="topic-hint">Select a topic to see its sub-topics.</p>
+      <ul class="topic-list">
+        <li>
+          <details class="topic-item">
+            <summary class="topic-name">Advanced Semiconductor Processes and Packaging</summary>
+            <p class="topic-sub">Advanced Process Nodes and EUV Lithography, Process Monitoring and Control, Advanced Packaging (2.5D/3D Integration), Chiplet and Heterogeneous Integration, Wide-Bandgap Semiconductors (SiC, GaN), Smart Fab and Equipment Automation</p>
+          </details>
+        </li>
+        <li>
+          <details class="topic-item">
+            <summary class="topic-name">Advanced Mechatronics Devices, Sensing and Control, and Control Systems</summary>
+            <p class="topic-sub">Robotics, Mobile and Factory Robots, Motion and Precision Control, Intelligent and Adaptive Systems, Parallel Mechanisms, Man-Machine Interfaces, Sensors, Computer Vision and Recognition, Automated Navigation, Modeling, Tele-operation, Intelligent and Advanced Control</p>
+          </details>
+        </li>
+        <li>
+          <details class="topic-item">
+            <summary class="topic-name">Artificial Intelligence, Machine Learning and Optimisation in Mechatronics</summary>
+            <p class="topic-sub">Data/AI-driven Modelling and Control of Mechatronic Systems, Machine Learning and Deep Learning for Diagnostics, Prognostics, Predictive Maintenance; Game-theoretic and Algorithmic Optimisation and Decision-Making for Robotics and Automation.</p>
+          </details>
+        </li>
+        <li>
+          <details class="topic-item">
+            <summary class="topic-name">Smart Actuators and Materials</summary>
+            <p class="topic-sub">Actuators using Functional Fluid, SMA Actuators, Piezo-Electric Actuators, Electro-Static Actuators, Magneto-Strictive Actuators, Smart Materials and Structures: Ionic Polymer–Metal Composites, Dielectric Electro Active Polymer</p>
+          </details>
+        </li>
+        <li>
+          <details class="topic-item">
+            <summary class="topic-name">MEMS/NEMS and Micro/Nano-Manufacturing</summary>
+            <p class="topic-sub">Precision Mechatronics, Micro/Nano-Electro Mechanical Systems, Opto-Mechatronics, Ultra-High Precision Machining, Focus Ion Beam Manufacturing</p>
+          </details>
+        </li>
+        <li>
+          <details class="topic-item">
+            <summary class="topic-name">Precision Measuring Technology</summary>
+            <p class="topic-sub">Dimensional Measurement, Micro/Nano Measurement, Ultra High Precision Positioning, Optical and Laser Technology, Scanning Probe Microscopy Technology, Measurement for Extreme Environments, Precision Instrumentation, Metrology</p>
+          </details>
+        </li>
+        <li>
+          <details class="topic-item">
+            <summary class="topic-name">Production Systems</summary>
+            <p class="topic-sub">Automation Science and Technology, Intelligent Machine Tools, Industry 4.0, Flexible and Agile Manufacturing, Production Planning and Control, Fault Monitoring and Diagnosis, e-Maintenance, e-Manufacturing, Rapid Prototyping, and Remote Manufacturing</p>
+          </details>
+        </li>
+        <li>
+          <details class="topic-item">
+            <summary class="topic-name">Sustainable Transport and Energy Systems</summary>
+            <p class="topic-sub">Automotive Hybridization and Electrification, Vehicle Lightweight Materials and Structures, High Power Energy Storage Systems, Advanced Propulsion and Energy Saving Technologies, System Modelling and Real-Time Estimation, Energy Management Strategies and Optimization, Conditional Monitoring Systems</p>
+          </details>
+        </li>
+        <li>
+          <details class="topic-item">
+            <summary class="topic-name">Mechatronics as an Enabler for Innovative and Intelligent Transportation Systems</summary>
+            <p class="topic-sub">Telematics, Big Data Mining, Deep Learning, Smart, Connected and Autonomous Vehicles</p>
+          </details>
+        </li>
+        <li>
+          <details class="topic-item">
+            <summary class="topic-name">Renewable Energy and Smart Grid</summary>
+            <p class="topic-sub">Sustainable Energy Resources, Energy Conversion Devices, Control Technologies, Energy Generation</p>
+          </details>
+        </li>
+        <li>
+          <details class="topic-item">
+            <summary class="topic-name">Bioengineering and Mechatronics Applications in Life Sciences</summary>
+            <p class="topic-sub">Biosensors, Biochip Manipulation, Medical equipment, Human-Friendly Mechatronics, Human Adaptive Mechatronics, Life Cycle Design, Recycle Technology, Ecological Design, Production</p>
+          </details>
+        </li>
+        <li>
+          <details class="topic-item">
+            <summary class="topic-name">Information and Networking</summary>
+            <p class="topic-sub">Network-Based Control Systems, Real-Time Systems, Embedded Systems, Self-Configuring Wireless Sensor Networks</p>
+          </details>
+        </li>
+        <li>
+          <details class="topic-item">
+            <summary class="topic-name">Human Resource Development and Education on Mechatronics Technology</summary>
+            <p class="topic-sub">Mechatronics education, virtual reality applications, and policy strategies</p>
+          </details>
+        </li>
+        <li>
+          <details class="topic-item">
+            <summary class="topic-name">Internet in Industry 4.0</summary>
+            <p class="topic-sub">Internet of Things, Internet based Manufacturing, AI, Super Smart Society</p>
+          </details>
+        </li>
+        <li>
+          <details class="topic-item">
+            <summary class="topic-name">Composite and Polymer Materials</summary>
+            <p class="topic-sub">Advanced Composites for Smart Devices, Polymers for Lightweight Structures in Mechatronic and Automation Systems, and Smart Integration of Polymers in Actuators, Sensors, and Manufacturing Technologies</p>
+          </details>
+        </li>
+      </ul>
     </div>
-    <a class="flyer-link" href="images/cfp-flyer-v2-full.jpg" target="_blank" rel="noopener">
-      <img src="images/cfp-flyer-v2.jpg" width="1240" height="1753" alt="ICMT 2027 Call for Papers flyer: 30th International Conference on Mechatronics Technology, 27–30 October 2027, Taipei, Taiwan, hosted by National Taipei University of Technology. Website https://icmt2027.org/">
-    </a>
-    <p class="cfp-hint">Tap the flyer to open it in full resolution.</p>
+
+    <div class="cfp-side">
+      <aside class="special-card">
+        <div class="special-head">
+          <h2 class="special-title">CALL FOR SPECIAL SESSIONS</h2>
+          <div class="special-rule"></div>
+        </div>
+        <div class="special-body">
+        <p>We welcome Special Session proposals on emerging topics. Download the proposal template and email the completed form to <a href="mailto:icmt2027@gmail.com">icmt2027@gmail.com</a> by <strong>March 1, 2027</strong>.</p>
+          <a class="btn btn-gold" href="https://docs.google.com/document/d/1nG-NBA1SE25Xr7G0ADcLMeVARUiHRvG0qKk45241iaQ/export?format=docx" rel="noopener"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>PROPOSAL TEMPLATE (.DOCX)</a>
+        </div>
+      </aside>
+
+      <div class="flyer-card">
+        <h2 class="flyer-title">CALL FOR PAPERS FLYER</h2>
+      <a class="flyer-link" href="images/cfp-flyer-v2-full.jpg" target="_blank" rel="noopener">
+        <img src="images/cfp-flyer-v2.jpg" width="1240" height="1753" alt="ICMT 2027 Call for Papers flyer: 30th International Conference on Mechatronics Technology, 27–30 October 2027, Taipei, Taiwan, hosted by National Taipei University of Technology. Website https://icmt2027.org/">
+      </a>
+      <div class="cfp-actions">
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1scCP16VMRXtT7e2zVp4dBb_7OobYinqm/view?usp=drive_link" target="_blank" rel="noopener">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+          DOWNLOAD PDF
+        </a>
+        <a class="btn btn-outline" href="images/cfp-flyer-v2-full.jpg" target="_blank" rel="noopener">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>
+          VIEW FULL SIZE
+        </a>
+      </div>
+      </div>
+    </div>
   </section>
 </main>
 
@@ -73,7 +187,7 @@
       <div class="section-label">CONTACT</div>
       <div class="contact-row">
         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-        <span>ICMT 2027 Secretariat</span>
+        <span>Ms. Shio-Jhu Jian, Conference Secretary</span>
       </div>
       <div class="contact-row">
         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
@@ -84,8 +198,13 @@
       <div class="section-label">HOSTED BY</div>
       <img src="images/logo-taipeitech-white.png" width="900" height="145" alt="National Taipei University of Technology (Taipei Tech)">
     </div>
+    <div class="footer-host">
+      <div class="section-label">CO-HOSTED BY</div>
+      <img src="images/logo-ncir-white.png" width="900" height="170" alt="National Center for Instrumentation Research (NCIR), National Institutes of Applied Research">
+    </div>
   </div>
 </footer>
 
+<script src="js/news.js?v=20261124c" defer></script>
 </body>
 </html>
