@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;900&display=swap">
-  <link rel="stylesheet" href="css/style.css?v=20261124c">
+  <link rel="stylesheet" href="css/style.css?v=20261126">
 </head>
 <body>
 
@@ -27,13 +27,19 @@
   <nav class="site-nav" aria-label="Main">
     <ul class="container nav-list">
       <li><a class="nav-link" href="index.html">ABOUT</a></li>
-      <li><a class="nav-link" href="authors-information.html" aria-current="page">AUTHORS INFORMATION</a></li>
-      <li><a class="nav-link" href="conference-committee.html">CONFERENCE COMMITTEE</a></li>
-      <li><a class="nav-link" href="speakers-info.html">SPEAKERS INFO</a></li>
-      <li><a class="nav-link" href="agenda-overview.html">AGENDA OVERVIEW</a></li>
-      <li><a class="nav-link" href="sponsors-information.html">SPONSORS INFORMATION</a></li>
-      <li><a class="nav-link" href="conference-venue.html">CONFERENCE VENUE</a></li>
-      <li><a class="nav-link" href="faq.html">FAQ</a></li>
+      <li><a class="nav-link" href="authors-information.html" aria-current="page">AUTHORS</a></li>
+      <li><a class="nav-link" href="conference-committee.html">COMMITTEE</a></li>
+      <li><a class="nav-link" href="speakers-info.html">SPEAKERS</a></li>
+      <li><a class="nav-link" href="agenda-overview.html">AGENDA</a></li>
+      <li><a class="nav-link" href="sponsors-information.html">SPONSORS</a></li>
+      <li><a class="nav-link" href="conference-venue.html">VENUE</a></li>
+      <li class="nav-more">
+        <button class="nav-link nav-more-btn" type="button" aria-expanded="false" aria-controls="nav-sub">OTHER</button>
+        <ul class="nav-sub" id="nav-sub">
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="https://www.icmt2026.org/" target="_blank" rel="noopener">ICMT 2026<span class="nav-ext" aria-hidden="true">&#8599;</span></a></li>
+        </ul>
+      </li>
     </ul>
   </nav>
 </header>
@@ -205,6 +211,7 @@
   </div>
 </footer>
 
-<script src="js/news.js?v=20261124c" defer></script>
+<script src="js/news.js?v=20261126" defer></script>
+<script src="js/nav.js?v=20261126" defer></script>
 </body>
 </html>

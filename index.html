@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;900&display=swap">
-  <link rel="stylesheet" href="css/style.css?v=20261124c">
+  <link rel="stylesheet" href="css/style.css?v=20261126">
 </head>
 <body>
 
@@ -31,13 +31,19 @@
   <nav class="site-nav" aria-label="Main">
     <ul class="container nav-list">
       <li><a class="nav-link" href="index.html" aria-current="page">ABOUT</a></li>
-      <li><a class="nav-link" href="authors-information.html">AUTHORS INFORMATION</a></li>
-      <li><a class="nav-link" href="conference-committee.html">CONFERENCE COMMITTEE</a></li>
-      <li><a class="nav-link" href="speakers-info.html">SPEAKERS INFO</a></li>
-      <li><a class="nav-link" href="agenda-overview.html">AGENDA OVERVIEW</a></li>
-      <li><a class="nav-link" href="sponsors-information.html">SPONSORS INFORMATION</a></li>
-      <li><a class="nav-link" href="conference-venue.html">CONFERENCE VENUE</a></li>
-      <li><a class="nav-link" href="faq.html">FAQ</a></li>
+      <li><a class="nav-link" href="authors-information.html">AUTHORS</a></li>
+      <li><a class="nav-link" href="conference-committee.html">COMMITTEE</a></li>
+      <li><a class="nav-link" href="speakers-info.html">SPEAKERS</a></li>
+      <li><a class="nav-link" href="agenda-overview.html">AGENDA</a></li>
+      <li><a class="nav-link" href="sponsors-information.html">SPONSORS</a></li>
+      <li><a class="nav-link" href="conference-venue.html">VENUE</a></li>
+      <li class="nav-more">
+        <button class="nav-link nav-more-btn" type="button" aria-expanded="false" aria-controls="nav-sub">OTHER</button>
+        <ul class="nav-sub" id="nav-sub">
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="https://www.icmt2026.org/" target="_blank" rel="noopener">ICMT 2026<span class="nav-ext" aria-hidden="true">&#8599;</span></a></li>
+        </ul>
+      </li>
     </ul>
   </nav>
 </header>
@@ -72,10 +78,12 @@
       <h2 class="section-title">ABOUT THE CONFERENCE</h2>
       <div class="section-rule"></div>
       <p>Marking its 30th edition, the International Conference on Mechatronics Technology (ICMT 2027) will take place in Taipei, Taiwan, hosted by National Taipei University of Technology. ICMT has long served as an international meeting point where researchers, engineers, and industry practitioners share recent advances in mechatronics. Building on this tradition, ICMT 2027 will connect academia and industry around emerging technologies and their real-world applications. The program will feature keynote speeches, oral sessions, and poster presentations across a broad spectrum of mechatronics topics.</p>
+      <p>The ICMT is an annual international conference on mechatronics technology that has been successfully held for over 29 years. ICMT offers a forum to discuss state-of-the-art technologies and emerging application trends and provides great opportunities for professional interactions and networking in a friendly and hospitable setting. The first ICMT was convened in Santa Clara, USA, in 1996, and subsequently in Yokohama, Hsinchu, Pusan, Singapore, Kitakyushu, Taiwan, Hanoi, Kuala Lumpur, Mexico City, Ulsan, Sudbury, Cebu City, Osaka, Melbourne, Tianjin, Jeju Island, Taipei, Tokyo, Dalian, Ho Chi Minh City, Jeju Island, Salerno, Singapore, Taiwan, Pusan, Kanazawa, Thu Duc and Coventry. The objective of ICMT is to facilitate close dialogues, networking and collaboration among experts on issues related to research and technological development in mechatronics, as well as in human resource development and education.</p>
     </div>
     <aside class="news-card" id="news" aria-labelledby="news-title">
       <h2 class="section-title" id="news-title">NEWS</h2>
-      <ol class="news-list" data-news-list></ol>
+      <ol class="news-list" data-news-list data-news-limit="3"></ol>
+      <a class="news-more" href="news.html">ALL NEWS<span aria-hidden="true"> &rarr;</span></a>
     </aside>
   </section>
 
@@ -176,6 +184,7 @@
   </div>
 </footer>
 
-<script src="js/news.js?v=20261124c" defer></script>
+<script src="js/news.js?v=20261126" defer></script>
+<script src="js/nav.js?v=20261126" defer></script>
 </body>
 </html>

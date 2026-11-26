@@ -1,7 +1,11 @@
-// ICMT 2027 news. Edit this list only: it feeds the news strip under the menu on every page
-// and the NEWS list on the home page. Newest first. One entry per date; put same-day
+// ICMT 2027 news. Edit this list only: it feeds the news strip under the menu on every page,
+// the NEWS card on the home page (latest 3 only) and the full list on news.html. Newest first. One entry per date; put same-day
 // updates in the same entry. "text" may contain links (<a href="...">...</a>).
 const ICMT_NEWS = [
+  {
+    date: "2026-11-26",
+    text: 'The <a href="conference-venue.html#transportation">transportation guide</a> has been updated. Past announcements are now collected on the <a href="news.html">News</a> page.',
+  },
   {
     date: "2026-11-24",
     text: 'Conference Venue page is online, with a campus map, a <a href="conference-venue.html#transportation">transportation guide</a> and <a href="conference-venue.html#visa">visa &amp; entry information</a> for international participants.',
@@ -49,8 +53,8 @@ const ICMT_NEWS = [
         '<div class="container news-strip-inner">' +
         '<span class="news-tag">NEWS</span>' +
         '<time class="news-strip-date" datetime="' + latest.date + '">' + fmt(latest.date) + "</time>" +
-        '<a class="news-strip-text" href="index.html#news"></a>' +
-        '<a class="news-strip-all" href="index.html#news">ALL NEWS</a>' +
+        '<a class="news-strip-text" href="news.html"></a>' +
+        '<a class="news-strip-all" href="news.html">ALL NEWS</a>' +
         '<button class="news-strip-close" type="button" aria-label="Close news">&times;</button>' +
         "</div>";
       strip.querySelector(".news-strip-text").textContent = plain(latest.text);
@@ -61,11 +65,14 @@ const ICMT_NEWS = [
     markSeen();
   }
 
-  // Full list on the home page (<ol class="news-list" data-news-list></ol>)
+  // News lists (<ol class="news-list" data-news-list></ol>). Add data-news-limit="3" to show
+  // only the latest items (home page); without it the whole list is shown (news.html).
   document.querySelectorAll("[data-news-list]").forEach(function (list) {
-    list.innerHTML = ICMT_NEWS.map(function (n, i) {
+    var limit = parseInt(list.getAttribute("data-news-limit"), 10);
+    var items = limit > 0 ? ICMT_NEWS.slice(0, limit) : ICMT_NEWS;
+    list.innerHTML = items.map(function (n, i) {
       return (
-        '<li class="news-item' + (i === 0 ? " is-new" : "") + '">' +
+        '<li class="news-item' + (i === 0 ? " is-new" : "") + '" id="news-' + n.date + '">' +
         '<time datetime="' + n.date + '">' + fmt(n.date) + "</time>" +
         "<p>" + n.text + "</p></li>"
       );
